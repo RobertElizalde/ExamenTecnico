@@ -13,31 +13,31 @@ public class DBUserHelper extends SQLiteOpenHelper {
     private static final int DATABASE_VERSION = 1;
 
     //Table and columns names
-    private static final String TABLE_NAME = "table_users";
-    private static final String COLUMN_NAME_ID = "id";
-    private static final String COLUMN_NAME_USER = "user";
-    private static final String COLUMN_NAME_PASS = "pass";
-    private static final String COLUMN_NAME_COUNTRY = "country";
-    private static final String COLUMN_NAME_STATE = "state";
-    private static final String COLUMN_NAME_GENDER = "gender";
+    public static final String TABLE_NAME = "table_users";
+    public static final String COLUMN_NAME_ID = "id";
+    public static final String COLUMN_NAME_USER = "user";
+    public static final String COLUMN_NAME_PASS = "pass";
+    public static final String COLUMN_NAME_COUNTRY = "country";
+    public static final String COLUMN_NAME_STATE = "state";
+    public static final String COLUMN_NAME_GENDER = "gender";
 
     //SQL Query for create table
     private static final String SQL_CREATE_ENTRIES =
             "CREATE TABLE " + TABLE_NAME +  "( " +
-            COLUMN_NAME_ID  + "INTEGER PRIMARY KEY AUTOINCREMENT, " +
-            COLUMN_NAME_USER + "TEXT," +
-            COLUMN_NAME_PASS + "TEXT," +
-            COLUMN_NAME_COUNTRY + "TEXT," +
-            COLUMN_NAME_STATE + "TEXT," +
-            COLUMN_NAME_GENDER + "TEXT)";
+            COLUMN_NAME_ID  + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
+            COLUMN_NAME_USER + " TEXT," +
+            COLUMN_NAME_PASS + " TEXT," +
+            COLUMN_NAME_COUNTRY + " TEXT," +
+            COLUMN_NAME_STATE + " TEXT," +
+            COLUMN_NAME_GENDER + " TEXT)";
 
     //SQL Query for delate table
     private static final String SQL_DELETE_ENTRIES =
             "DROP TABLE IF EXISTS " + TABLE_NAME;
 
 
-    public DBUserHelper(@Nullable Context context, @Nullable String name, @Nullable SQLiteDatabase.CursorFactory factory, int version) {
-        super(context, DATABASE_NAME, factory, DATABASE_VERSION);
+    public DBUserHelper(@Nullable Context context) {
+        super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
 
     @Override
