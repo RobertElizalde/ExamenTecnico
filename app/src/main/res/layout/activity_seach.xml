@@ -11,33 +11,38 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Welcome user"
-        />
+
+        android:text="Select filter" />
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
     <TextView
-        android:id="@+id/text_view_user"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Usuario:"/>
-    <TextView
-        android:id="@+id/text_view_country"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Pais:"/>
-    <TextView
-        android:id="@+id/text_view_state"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Estado:"/>
-    <TextView
-        android:id="@+id/text_view_gender"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Genero:"/>
-    <Button
-        android:onClick="search"
-        android:text="SearcH"
+        android:text="Insert Value"/>
+    <EditText
+        android:id="@+id/edit_text_value"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ordery By"/>
+    <Spinner
+        android:id="@+id/spinner_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:onClick="searchWithParams"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search with parameters"/>
+    <TextView
+        android:scrollbars="vertical"
+        android:id="@+id/text_view_results"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
 
 </LinearLayout>

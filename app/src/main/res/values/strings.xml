@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Exam</string>
+    <string-array name="filters">
+        <item>Usuario</item>
+        <item>Pais</item>
+        <item>Estado</item>
+        <item>Genero</item>
+    </string-array>
+
 </resources>

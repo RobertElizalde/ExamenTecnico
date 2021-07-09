@@ -40,9 +40,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void validate(View view) {
-        Faker fakeInserts = new Faker();
-        fakeInserts.insertFakeUser(this,1000);
-        Toast.makeText(this, "Datos insertados", Toast.LENGTH_LONG).show();
 
         String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
         String passPattern = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\\S+$).{8}$";

@@ -6,7 +6,9 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.exam.db.DBUserHelper;
 
@@ -69,5 +71,10 @@ public class WelcomeActivity extends AppCompatActivity {
             }
 
         }
+    }
+
+    public void search(View view){
+        Intent intent = new Intent(this, SeachActivity.class);
+        startActivity(intent);
     }
 }
